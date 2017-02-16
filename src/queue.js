@@ -33,8 +33,16 @@ export default class Queue {
     return null
   }
 
-  peek() {
+  front() {
     return this.frontElement !== null ? this.frontElement.data : null
+  }
+
+  back() {
+    return this.backElement !== null ? this.backElement.data : null
+  }
+
+  isEmpty() {
+    return this.size === 0
   }
 
   length() {
